@@ -12,9 +12,7 @@
 
 ActiveRecord::Schema.define(version: 3) do
 
-    ActiveRecord::Schema.define(version: 3) do
-
-   create_table "costume_stores", force: :cascade do |t|
+  create_table "costume_stores", force: :cascade do |t|
     t.string "name"
     t.string "location"
     t.integer "costume_inventory"
@@ -26,19 +24,19 @@ ActiveRecord::Schema.define(version: 3) do
     t.datetime "updated_at", null: false
   end
 
-   create_table "costumes", force: :cascade do |t|
+  create_table "costumes", force: :cascade do |t|
     t.string "name"
+    t.float "price"
     t.string "size"
     t.string "image_url"
-    t.float "price"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-   create_table "haunted_houses", force: :cascade do |t|
+  create_table "haunted_houses", force: :cascade do |t|
     t.string "name"
-    t.string "location"
     t.string "theme"
+    t.string "location"
     t.float "price"
     t.boolean "family_friendly"
     t.datetime "opening_date"
@@ -47,7 +45,5 @@ ActiveRecord::Schema.define(version: 3) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
-
- end
 
 end
