@@ -22,12 +22,12 @@ end
 
 def get_opening_time
   d = Date.today
-  Time.new(d.year, d.month, d.day, 9, 00)
+  Time.new(d.year, d.month, d.day, 9, 00).to_s
 end
 
 def get_closing_time
   d = Date.today
-  Time.new(d.year, d.month, d.day, 22, 00)
+  Time.new(d.year, d.month, d.day, 22, 00).to_s
 end
 
 def get_description
